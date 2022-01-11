@@ -10,13 +10,26 @@ Starting guess is always `STEAL` because I am unsure of an optimal first guess. 
 I didn't sanitise my inputs, please only input exactly 5 characters per input like `--GY-` where `-` are black, `G` is Green and `Y` is Yellow. 
 
 <pre>
-$ <b>python .\solver.py
-Guess is STEAL : <b>-----</b>
-221 possible words: ['HUMPH', 'MIMIC', 'POUND', 'BOOBY', 'IVORY', 'ROUND', 'CIVIC', 'CORNY', 'FJORD', 'DOWRY', 'BOOZY', 'DUCHY', 'GROIN', 'GROUP', 'BRING', 'RHINO', 'CONIC', 'PICKY', 'UNIFY', 'DRINK', 'PROXY', 'PRICK', 'CRIMP', 'WRUNG', 'HUMOR', 'ROBIN', 'CYNIC', 'VIVID', 'MOURN', 'NYMPH', 'FOUND', 'CHUNK', 'FORGO', 'VOUCH', 'DONOR', 'PRIMO', 'BRINK', 'HYDRO', 'ROOMY', 'BOBBY', 'CINCH', 'BUGGY', 'HUNKY', 'WIDOW', 'IRONY', 'FUNGI', 'WHOOP', 'BOUGH', 'VIGOR', 'HOWDY', 'IONIC', 'QUIRK', 'MUMMY', 'FOGGY', 'POOCH', 'HIPPY', 'OPIUM', 'INCUR', 'FUNNY', 'MOUND', 'QUICK', 'GRIND', 'JIFFY', 'WOOZY', 'MUDDY', 'ONION', 'COUCH', 'GOODY', 'FROWN', 'HUMID', 'CROCK', 'BIRCH', 'WINCH', 'CHUMP', 'MORON', 'CROUP', 'JUICY', 'CROOK', 'ICING', 'RIGOR', 'POPPY', 'DOWDY', 'DUMPY', 'HORNY', 'DOING', 'DYING', 'BUDDY', 'CHORD', 'CROWD', 'PRIVY', 'BONGO', 'PUDGY', 'CHOIR', 'CRICK', 'FUROR', 'COUGH', 'FURRY', 'CRUMP', 'DOUGH', 'UNZIP', 'MINOR', 'MURKY', 'BUXOM', 'PORCH', 'DINGO', 'BROOD', 'PIGGY', 'WHICH', 'POUCH', 'CROWN', 'WOODY', 'COMIC', 'FROCK', 'DRUNK', 'PRONG', 'WORRY', 'FINCH', 'GROOM', 'YOUNG', 'FROND', 'OVOID', 'CHUCK', 'PUPPY', 'BUNNY', 'JUMBO', 'CONCH', 'DROOP', 'RUGBY', 'MICRO', 'COMFY', 'GRUFF', 'ROCKY', 'GROWN', 'CUMIN', 'RIGID', 'ROWDY', 'MUCKY', 'BINGO', 'HONOR', 'PHONY', 'BRICK', 'VYING', 'HIPPO', 'RUDDY', 'WINDY', 'CRUMB', 'DUMMY', 'BROOM', 'HOBBY', 'IDIOM', 'CHICK', 'WHINY', 'WHIFF', 'WRONG', 'HUNCH', 'PUFFY', 'CURIO', 'CHURN', 'WIMPY', 'JUROR', 'MORPH', 'MOODY', 'FUZZY', 'CUBIC', 'BRINY', 'BOUND', 'PROUD', 'GUMBO', 'DIZZY', 'BROOK', 'NINNY', 'OWING', 'MINIM', 'ROUGH', 'WORDY', 'FUNKY', 'DINGY', 'PROOF', 'DODGY', 'MYRRH', 'PRIOR', 'PINKY', 'CHOCK', 'FORUM', 'JUMPY', 'GIDDY', 'RUMOR', 'WOUND', 'INBOX', 'FIZZY', 'KINKY', 'GRIMY', 'CURVY', 'BIDDY', 'CURRY', 'OCCUR', 'PUBIC', 'MUNCH', 'HURRY', 'PYGMY', 'WRING', 'DROWN', 'GUPPY', 'UNION', 'DRUID', 'CRONY', 'BUNCH', 'KNOWN', 'PUNCH', 'DOWNY', 'GOOFY', 'GUMMY', 'CHIRP', 'GOURD', 'BROWN', 'PINCH', 'GOING', 'HOUND', 'UNDID', 'KNOCK', 'CONDO']
-Guess is ROUND : <b>Y--GY</b>
-1 possible words: ['DRINK']
-Guess is DRINK : <b>GGGGG</b>
+$ <b>python .\solver.py</b>
+Guess is RAISE : <b>Y---Y</b>
+102 possible words: ['ERROR', 'WOOER', 'GREET', 'GONER', 'HYPER', 'HERON', 'PERCH', 'FERRY', 'QUERY', 'PERKY', 'ELDER', 'ULCER', 'OTHER', 'FEWER', 'FOYER', 'HOMER', 'CREPT', 'EGRET', 'BERTH', 'POWER', 'POKER', 'GRUEL', 'LEERY', 'THREW', 'DETER', 'LOVER', 'UDDER', 'DERBY', 'ERUPT', 'CREEK', 'QUEER', 'FREER', 'FLYER', 'BLUER', 'WRECK', 'COVER', 'JOKER', 'CREED', 'OUTER', 'DEMUR', 'ENTER', 'EVERY', 'OTTER', 
+'TUBER', 'CREEP', 'BUYER', 'LOWER', 'CYBER', 'OFFER', 'DRYER', 'OVERT', 'ETHER', 'CREDO', 'BOXER', 'PREEN', 'LEMUR', 'BREED', 'NEVER', 'OWNER', 'EMBER', 'HOVER', 'JERKY', 'UPPER', 'MOVER', 'DEFER', 'CRUEL', 'NERDY', 'FREED', 'DECOR', 'UTTER', 'ORDER', 'UNDER', 'CLERK', 'OLDER', 'CHEER', 'GREEN', 'ENTRY', 'VOTER', 'ODDER', 'LEPER', 'TENOR', 'TREND', 'TOWER', 'FEVER', 'TRUER', 'PURER', 'MERRY', 'BERRY', 'COWER', 'ERECT', 'GREED', 'BERET', 'EXERT', 'CORER', 'MOWER', 'METRO', 'NEWER', 'LEVER', 'METER', 'FEMUR', 'DECRY', 'MERCY']
+Guess is OUTER : <b>-G-YY</b>
+1 possible words: ['QUERY']
+Guess is QUERY : <b>GGGGG</b>
+Word is QUERY
 </pre>
+
+<pre>
+$ <b>python .\solver.py
+Guess is RAISE : <b>Y-G--</b>
+28 possible words: ['PRINT', 'BRING', 'DRINK', 'PRICK', 'CRIMP', 'PRIMO', 'BRINK', 'QUIRK', 'GRIND', 'FRITZ', 'TWIRL', 'PRIVY', 'CRICK', 'THIRD', 'TRICK', 'FLIRT', 'GRILL', 'BRICK', 'BRINY', 'DRILL', 'KRILL', 'FRILL', 'DRIFT', 'PRIOR', 'GRIMY', 'WRING', 'WHIRL', 'CHIRP']
+Guess is CLONK : <b>---GG</b>
+2 possible words: ['DRINK', 'BRINK']
+Guess is DRINK : <b>GGGGG</b>
+Word is DRINK
+</pre>
+
 ## Installation
 
 Python 3.9.1

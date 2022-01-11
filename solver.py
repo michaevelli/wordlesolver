@@ -19,9 +19,11 @@ def query(answer, guess):
     return "".join(result)  
 
 # Get word bank
-f = open("wordbankanswers.txt")
+f = open("wordbank.txt")
 wordBank = f.read().split(" ")
-possible = wordBank[:]
+f.close()
+f = open("wordbankanswers.txt")
+possible = f.read().split(" ")
 f.close()
 
 # Prepare lists
@@ -35,8 +37,8 @@ f = open("possibleresults.txt")
 possibleResults = f.read().split(" ")
 f.close()
 
-# No doubt there is an optimal first guess but I settled for 5 distinct characters, containing T, E, A (most frequent english letters)
-guess = "STEAL"
+# Running minmax immediately gives 4 words to start with: ARISE, RAISE, aesir and serai. Only the first 2 are in the possible words set
+guess = "RAISE"
 oldguesses += [guess]
 result = input("Guess is " + guess + " : ").upper()
 
@@ -50,6 +52,12 @@ while (result != "GGGGG"):
     possible = tempPossible
     
     print(str(len(possible)) + " possible words: " + str(possible))
+
+    if (len(possible) < 3):
+        guess = possible[0]
+        oldguesses += [guess]
+        result = input("Guess is " + guess + " : ")
+        continue
 
     # MinMax
     for i in range(len(wordBank)):
@@ -80,7 +88,7 @@ while (result != "GGGGG"):
     oldguesses += [guess]
     result = input("Guess is " + guess + " : ")
 
-
+print("Word is " + guess)
 
 
 
