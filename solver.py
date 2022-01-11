@@ -56,7 +56,7 @@ while (result != "GGGGG"):
     if (len(possible) < 3):
         guess = possible[0]
         oldguesses += [guess]
-        result = input("Guess is " + guess + " : ")
+        result = input("Guess is " + guess + " : ").upper()
         continue
 
     # MinMax
@@ -86,7 +86,7 @@ while (result != "GGGGG"):
             break
     
     oldguesses += [guess]
-    result = input("Guess is " + guess + " : ")
+    result = input("Guess is " + guess + " : ").upper()
 
 print("Word is " + guess)
 
