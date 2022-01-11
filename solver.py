@@ -17,16 +17,14 @@ def query(answer, guess):
             result[i] = "Y"
             answerlist[answerlist.index(guesslist[i])] = " "
     return "".join(result)  
-        
 
-
-
-# Word list from https://www.bestwordlist.com/5letterwords.htm
+# Get word bank
 f = open("wordbankanswers.txt")
 wordBank = f.read().split(" ")
 possible = wordBank[:]
 f.close()
 
+# Prepare lists
 scores = []
 for i in range(len(wordBank)):
     scores += [0]
@@ -71,9 +69,9 @@ while (result != "GGGGG"):
     
     # Guess the Max of the Min
     highscores = [i for i, j in enumerate(scores) if j == max(scores)]
-
     guess = wordBank[scores.index(max(scores))]
 
+    # try to use a guest in the possible set
     for i in highscores:
         if wordBank[i] in possible:
             guess = wordBank[i]
