@@ -3,7 +3,7 @@
 Solves the [Wordle](https://www.powerlanguage.co.uk/wordle/) game using a minimax algorithm.  
 Word bank obtained from website via inspect element.  
 Algorithm can take 10 minutes for a second guess (maybe longer), but subsequent guesses are quite fast as the possible words set is reduced.  
-Starting guess is always `STEAL` because I am unsure of an optimal first guess. I choose to have a first guess including the letters "E", "T" and "A", being the most common letters of the english language.
+A run of the algorithm with the word bank and possible answers gives the following optimal starting guesses: `ARISE`, `RAISE`, `AESIR` and `SERAI`. Only the first 2 are in the possible word bank so rather than wait 2 hours for a first guess that will always be the same word, `RAISE` is hardcoded as the first guess.
 
 ## Usage
 
