@@ -2,7 +2,7 @@
 
 Solves the [Wordle](https://www.powerlanguage.co.uk/wordle/) game using a minimax algorithm.  
 Word bank obtained from [bestwordlist](https://www.bestwordlist.com/5letterwords.htm). I'm not sure if it's the real word bank or not but it contains over 12k words.  
-Algorithm takes over 10 minutes to provide the second guess, but subsequent guesses are quite fast as the possible words set is reduced.  
+Algorithm can take 10 minutes for a second guess (maybe longer), but subsequent guesses are quite fast as the possible words set is reduced.  
 Starting guess is always `STEAL` because I am unsure of an optimal first guess. I choose to have a first guess including the letters "E", "T" and "A", being the most common letters of the english language.
 
 ## Usage
