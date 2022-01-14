@@ -53,6 +53,10 @@ while (result != "GGGGG"):
     
     print(str(len(possible)) + " possible words: " + str(possible))
 
+    if len(possible) == 0:
+        guess = "-----"
+        break
+
     if (len(possible) < 3):
         guess = possible[0]
         oldguesses += [guess]
