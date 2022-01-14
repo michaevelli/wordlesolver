@@ -25,6 +25,9 @@ f.close()
 f = open("wordbankanswers.txt")
 possible = f.read().split(" ")
 f.close()
+f = open ("secondguesses.txt")
+second = f.read().split(" ")
+f.close()
 
 # Prepare lists
 scores = []
@@ -62,6 +65,14 @@ while (result != "GGGGG"):
         oldguesses += [guess]
         result = input("Guess is " + guess + " : ").upper()
         continue
+    
+    # Obtain second guess from pregenerated word bank
+    if (guess == "RAISE"):
+        guess = second[possibleResults.index(result)]
+        oldguesses += [guess]
+        result = input("Guess is " + guess + " : ").upper()
+        continue
+
 
     # MinMax
     for i in range(len(wordBank)):
