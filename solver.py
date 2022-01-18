@@ -103,7 +103,7 @@ while (result != "GGGGG"):
     oldguesses += [guess]
     result = input("Guess is " + guess + " : ").upper()
 
-print("Word is " + guess)
+print("Word is " + guess + ", "+ str(len(oldguesses)) + " guesses")
 
 
 
